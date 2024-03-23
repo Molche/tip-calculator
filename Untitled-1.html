@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+</head>
+<body>
+  <h1>Tip Calculator</h1>
+  <form action="/" method="post">
+    <label for="bill_amount">Bill Amount:</label>
+    <input type="number" id="bill_amount" name="bill_amount" required>
+    <br>
+    <label for="tip_rate">Tip Rate:</label>
+    <select id="tip_rate" name="tip_rate">
+      <option value="10">10%</option>
+      <option value="15">15%</option>
+      <option value="20">20%</option>
+      <option value="25">25%</option>
+    </select>
+    <br>
+    <input type="submit" value="Calculate">
+  </form>
+  <br>
+  <p>Tip Amount: <span id="tip_amount"></span></p>
+  <p>Total Payment Amount: <span id="total_amount"></span></p>
+</body>
+</html>
